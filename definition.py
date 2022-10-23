@@ -68,11 +68,3 @@ def definition_finder():
     definition+= "."
 
     return(definition)
-
-
-def main():
-    print(definition_finder())
-
-if __name__ == "__main__":
-    main()
-
