@@ -67,4 +67,11 @@ def definition_finder():
             definition = definition + " " + lines[i]
     definition+= "."
 
+    
     return(definition)
+
+def main():
+    print(definition_finder())
+    
+if __name__ == "__main__":
+    main()
