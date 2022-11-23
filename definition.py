@@ -21,7 +21,7 @@ def definition_finder():
     #print(src)
 
     #create a soup object of the source
-    soupW = BeautifulSoup(srcW, 'lxml')
+    soupW = BeautifulSoup(srcW)
 
     #takes out the links and prints them
     tagsW = soupW.findAll('strong')[1]
@@ -46,7 +46,7 @@ def definition_finder():
     #print(resultD.status_code)
 
     srcD = resultD.content
-    soupD = BeautifulSoup(srcD, 'lxml')
+    soupD = BeautifulSoup(srcD)
 
     #finds the specific line using its tag
     tagD = soupD.find_all('div', attrs={'class': 'definition'})
