@@ -61,7 +61,7 @@ def definition_finder():
     #putting it together in a string
     for i in range(len(lines)):
         if i == 0:
-            definition += lines[i]
+            definition += lines[i].title()
             definition += ":"
         else:
             definition = definition + " " + lines[i]

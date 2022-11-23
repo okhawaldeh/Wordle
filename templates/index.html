@@ -14,11 +14,12 @@
 </head>
 
 <body class="bg-black muli">
-    <!-- <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+    <div id="nav-items" style="position: absolute; top: 0;right: 0;" >
     <a href="https://www.buymeacoffee.com/okhawaldeh">
         <img src="https://miro.medium.com/max/1400/1*09z8y8Q7CsZInYJ8IZ27aQ.jpeg" width="200" height="200">
-    </a> -->
+    </a>
     </div>
+
     <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
         <div class="flex justify-between">
             <a href="#" class="flex items-center p-2 mr-4 no-underline">
@@ -31,15 +32,16 @@
     </nav>
 
     <!-- hero section -->
-    <section id="home" class="min-h-100vh flex justify-start items-center">
-        <div class="mx-5 md-mx-l5" >
-            <div>
-                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 "> Daily Wordle Hint</h1>
+    <!-- <section id="home" class="min-h-100vh flex justify-start items-center"> -->
+        <section id="home" style="padding-top: 250px;"></section>
+        <div>
+            <div style="text-align: center;">
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900"> Daily Wordle Hint</h1>
                 <form class="form-group" method="post" action="{{url_for('index')}}">
                     <!-- <button type="button" class="btn btn-outline-warning">Show Hint</button> -->
                     <!-- <p class="submit"><input type="submit" value=" SHOW HINT " class="form-control btn btn-success " name=""></p> -->
                     <p class="submit"><input type="submit" value="SHOW HINT" class="form-control btn btn-outline-warning" name="" style="max-width:250px;"></p>
-                    <h4 class = "white fw-600 fs-m3 mb-5">{{definition}}</h4> 
+                    <h4 class = "fw-600 fs-m3 mb-5" style="color: #ffc008;">{{definition}}</h4> 
                 </form>
             </div>
         </div>
