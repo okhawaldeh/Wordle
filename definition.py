@@ -17,7 +17,7 @@ def definition_finder():
     resultW = requests.get(url_wordle)
 
     #make sure wesbite is accessible, should return 200
-    # print(resultW.status_code) 
+    # print(resultW.status_code)
 
     #creates a var of all the content of the website
     srcW = resultW.content
@@ -56,5 +56,4 @@ def definition_finder():
     return(definition)
 
 if __name__ == "__main__":
-    print(definition_finder())
-    # definition_finder()
+    definition_finder()
